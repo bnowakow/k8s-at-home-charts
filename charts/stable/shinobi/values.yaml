@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: shinobisystems/shinobi
+  repository: registry.gitlab.com/shinobi-systems/shinobi
   # -- image tag
   # @default -- chart.appVersion
   tag:

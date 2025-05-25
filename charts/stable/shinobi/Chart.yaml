@@ -1,9 +1,9 @@
 ---
-apiVersion: v2
+apiVersion: v3
 appVersion: dev
 description: shinobi helm package
 name: shinobi
-version: 1.2.3
+version: 1.2.4
 kubeVersion: ">=1.16.0-0"
 keywords:
   - shinobi
