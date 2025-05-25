@@ -3,17 +3,17 @@ apiVersion: v2
 appVersion: dev
 description: shinobi helm package
 name: shinobi
-version: 1.2.2
+version: 1.2.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - shinobi
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/shinobi
+home: https://github.com/bnowakow/k8s-at-home-charts/tree/master/charts/stable/shinobi 
 icon: https://shinobi.org/icon
 sources:
-  - https://gitlab.com/Shinobi-Systems/Shinobi-Installer
+  - https://gitlab.com/Shinobi-Systems/Shinobi/INSTALL
 maintainers:
-  - name: giannoug
-    email: 509474+giannoug@users.noreply.github.com
+  - name: bnowakow
+    email: bartek@bnowakowski.pl
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
