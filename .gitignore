@@ -7,8 +7,9 @@
 .devcontainer/
 
 # Helm resources
-charts/**/Chart.lock
-charts/**/charts
+# TODO until I don't build helm I'm adding git repo to rancher
+#charts/**/Chart.lock
+#charts/**/charts
 
 # Other rsources
 .env
