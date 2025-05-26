@@ -19,6 +19,8 @@ image:
 env:
   # -- Set the container timezone
   TZ: UTC
+  # TODO by default this is set to localhost, but grants in scripts are set to 127.0.0.1
+  DB_HOST: 127.0.0.1
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
@@ -38,20 +40,30 @@ ingress:
 # @default -- See values.yaml
 persistence:
   config:
-    enabled: false
+    enabled: true
     mountPath: /config
+    accessMode: ReadWriteOnce
+    size: 1Gi
   custom-auto-load:
-    enabled: false
+    enabled: true
     mountPath: /home/Shinobi/libs/customAutoLoad
+    accessMode: ReadWriteOnce
+    size: 1Gi
   database:
-    enabled: false
+    enabled: true
     mountPath: /var/lib/mysql
+    accessMode: ReadWriteOnce
+    size: 1Gi
   videos:
-    enabled: false
+    enabled: true
     mountPath: /home/Shinobi/videos
+    accessMode: ReadWriteOnce
+    size: 2000Gi
   plugins:
-    enabled: false
+    enabled: true
     mountPath: /home/Shinobi/plugins
+    accessMode: ReadWriteOnce
+    size: 1Gi
   shm:
     enabled: true
     type: emptyDir
